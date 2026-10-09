@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title> for Hesti Ruwaida 💖</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<!-- ================= HTML (isi halaman) ================= -->
+<body>
+<canvas id="confetti"></canvas>
+
+<!-- 1. HALAMAN AWAL -->
+<section class="full" id="start">
+  <div class="heart">🎁</div>
+  <h1 id="startTitle"></h1>
+  <p>↓ GASIN BUBB ↓</p>
+  <button id="startBtn">GASKAN ✨</button>
+</section>
+
+<!-- 2. HITUNG MUNDUR -->
+<section class="full" id="wait" style="display:none">
+  <h1>Sek lama kamu 20th yak wkwkwk⏳</h1>
+  <p>Kejutannya akan terbuka dalam:</p>
+  <div class="countdown">
+    <div><b id="d">0</b><span>hari</span></div>
+    <div><b id="h">0</b><span>jam</span></div>
+    <div><b id="m">0</b><span>menit</span></div>
+    <div><b id="s">0</b><span>detik</span></div>
+  </div>
+</section>
+
+<!-- 3. KEJUTAN -->
+<main id="site">
+
+  <!-- Hero -->
+  <section class="full" id="hero">
+    <div class="heart">🎉</div>
+    <h1 id="judul"></h1>
+    <p>Scroll ke bawah ya…</p>
+    <div class="scrollHint">⌄</div>
+  </section>
+
+  <!-- Pesan (kartu kiri-kanan) -->
+  <section class="wrap">
+    <div class="sectionTitle reveal up"><h2>↘↙</h2></div>
+    <div class="bubbles" id="bubbles"></div>
+  </section>
+
+  <!-- Sorotan -->
+  <section class="band reveal zoom" id="band"><p id="sorotan"></p></section>
+
+  <!-- Kartu kalimat (tersembunyi, memanjang ke bawah saat di-tap) -->
+  <section class="wrap center" id="noteSection" style="display:none">
+    <div class="reveal zoom" style="margin-top:90px">
+      <button class="noteBtn" id="noteBtn" aria-expanded="false" aria-controls="noteCard">
+        <span id="noteBtnText">Tap untuk baca</span>
+      </button>
+    </div>
+    <div class="noteWrap" id="noteCard">
+      <div class="noteInner">
+        <div class="note">
+          <small class="noteLabel" id="noteJudul"></small>
+          <p class="noteText" id="noteIsi"></p>
+          <small class="noteFrom" id="noteDari"></small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Linimasa (opsional) -->
+  <section class="wrap" id="tlSection" style="display:none">
+    <div class="sectionTitle reveal up"><h2>JOURNEY</h2></div>
+    <div class="timeline" id="timeline"></div>
+  </section>
+
+  <!-- Memory: tombol menuju halaman Memory -->
+  <section class="wrap center" id="memSection" style="display:none">
+    <div class="sectionTitle reveal up">
+      <h2>Memory</h2><small>Foto dan video kenangan kita</small>
+    </div>
+    <a class="btn reveal zoom" href="memory.html">Buka Memory ➜</a>
+  </section>
+
+  <!-- Gift card (tersembunyi, muncul saat di-tap) -->
+  <section class="wrap center" id="giftSection" style="display:none">
+    <div class="sectionTitle reveal up">
+      <h2>Ada hadiah kecil 🎁</h2><small>Tap kartunya untuk membuka</small>
+    </div>
+    <div class="giftcard reveal zoom" id="giftcard" tabindex="0" role="button" aria-label="Buka gift card">
+      <div class="giftInner">
+        <div class="giftFace giftFront">
+          <div class="ribbonV"></div>
+          <div class="ribbonH"></div>
+          <div class="bow">🎀</div>
+          <span class="giftTap">Tap untuk buka</span>
+        </div>
+        <div class="giftFace giftBack">
+          <small class="gcLabel" id="gcJudul"></small>
+          <h3 id="gcNilai"></h3>
+          <p id="gcPesan"></p>
+          <div class="gcCode" id="gcKode"></div>
+          <small class="gcBerlaku" id="gcBerlaku"></small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Penutup -->
+  <section class="closing center">
+    <h1 class="reveal zoom" id="penutup"></h1>
+    <p class="reveal up" id="dari"></p>
+  </section>
+</main>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+<script src="musik.js"></script>
+</body>
+</html>
