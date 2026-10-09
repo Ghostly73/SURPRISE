@@ -73,7 +73,7 @@ const CONFIG = {
 
   /* MUSIK LATAR (mulai saat tombol GASKAN ditekan) */
   musik: {
-    src: "Music/anyone.mp3",
+    src: "Music/Bruno.mp3",
     volume: 0.6
   },
 
